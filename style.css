@@ -1,4 +1,53 @@
 html {
   margin: 0;
   height: 100%; 
+  background-image: url("minecraft-assets/minecraft_background_with_title.png");
+}
+
+#buttons1 {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.img1 {
+  margin: 0.5%;
+}
+
+#buttons2 {
+  flex-direction: row;
+  margin-left: 29.35%;
+}
+
+.img2 {
+  margin: 0.5%;
+}
+
+@font-face {
+  font-family: 'minecraftregular';
+  src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+}
+
+#splash {
+  font-family:'minecraftregular', sans-serif;
+  font-size: 30px;
+  color: #fafd11;
+  text-shadow: offset-x, offset-y, blur-radius, black;
+  position: absolute;
+  left: 1200px;
+  top: 150px;
+  animation: text 2s infinite;
+}
+
+@keyframes text {
+  0% {
+    transform:scale(1) rotate(-30deg);
+  }
+  50% {
+    transform:scale(0.9) rotate(-30deg);
+  }
+  100% {
+    transform:scale(1) rotate(-30deg);
+  }
 }
